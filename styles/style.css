@@ -1,6 +1,109 @@
 *,
+address,
+body,
+dd,
+dl,
+dt,
+h1,
+h2,
 html,
-body {
+img,
+li,
+p,
+ul {
     margin: 0;
     padding: 0;
+    font-style: normal;
+    line-height: 1.5
+}
+
+address,
+body,
+dd,
+dl,
+dt,
+h1,
+h2,
+html,
+li,
+p,
+ul {
+    border: 0
+}
+
+html {
+    background-image: url("../images/denim.png");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {}
+
+
+
+.header {
+    background-image: url("../images/black_denim.png");
+    height: 70px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    color: white;
+}
+
+.header--container {
+    padding-top: 35px;
+}
+
+.header--container--title {
+    font-weight: 1000;
+    display: inline-block;
+}
+
+.nav {
+    margin-top: 75px;
+}
+
+.nav__ul--menu {
+    list-style: none;
+}
+
+.menu__li {
+    display: inline;
+}
+
+.main {
+    background-color: white;
+    margin-bottom: 28px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    font-size: 0.75rem;
+}
+
+.footer .menu__li {
+    padding: 5px;
+}
+
+.container {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.--flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.--flex-around {
+    display: flex;
+    justify-content: space-around;
 }
