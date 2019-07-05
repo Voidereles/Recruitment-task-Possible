@@ -31,18 +31,15 @@ ul {
     border: 0
 }
 
-html {
+body {
     background-image: url("../images/denim.png");
     font-family: Arial, Helvetica, sans-serif;
 }
-
-body {}
 
 a:-webkit-any-link {
     color: white;
     text-decoration: none;
 }
-
 
 .header {
     background-image: url("../images/black_denim.png");
@@ -84,13 +81,14 @@ a:-webkit-any-link {
     overflow: hidden;
     background-color: transparent;
     display: block;
-    padding: 4px 20px;
+    padding: 4px 25px;
     text-transform: uppercase;
     font-weight: 200;
     transition: 0.1s 0.05s;
 }
 
-.nav .menu__li a:hover {
+.menu__li a:hover,
+.menu__li a:focus {
     color: #1d9ed9;
 }
 
@@ -105,7 +103,8 @@ a:-webkit-any-link {
     z-index: -1;
 }
 
-.nav .menu__li a:hover::before {
+.nav .menu__li a:hover::before,
+.nav .menu__li a:focus::before {
     height: 100%;
     background-color: black;
 }
@@ -115,11 +114,43 @@ a:-webkit-any-link {
     padding: 5px 0;
 }
 
-.main {
+.content {
     background-color: white;
     margin-bottom: 28px;
-    padding: 20px;
     box-sizing: border-box;
+    display: flex;
+}
+
+.main {
+    padding: 45px 23px 35px 28px;
+    width: calc(calc(calc(100% / 3) * 2) + 45px);
+}
+
+.main ::selection {
+    background: lightgray;
+}
+
+.main--gallery {
+    margin-top: 40px;
+}
+
+.aside--rightColumn {
+    display: block;
+    width: calc(calc(100% / 3) - 45px);
+    background-color: #f2f2f2;
+    padding: 20px;
+    color: #1d9ed9;
+}
+
+.rightColumn--title__figure {
+    display: block;
+    width: 50%;
+    border-top: 2px solid #1d9ed9;
+    margin: calc(2em + 37.5px) 0px 10px 0px;
+}
+
+.aside--rightColumn img {
+    width: 100%;
 }
 
 .footer {
@@ -132,21 +163,18 @@ a:-webkit-any-link {
     font-size: 0.75rem;
 }
 
-
 .container {
     width: 1024px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.--flex-spacing {
+.flex-between {
     display: flex;
     justify-content: space-between;
 }
 
-
-@media (min-width: 1650px) {
-    .flex-spacing {
-        justify-content: space-around;
-    }
+.flex-around {
+    display: flex;
+    justify-content: space-around;
 }

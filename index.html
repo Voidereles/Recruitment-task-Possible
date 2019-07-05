@@ -21,59 +21,62 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience. Here you can find links where you can download most popular browsers: <a href="https://www.google.com/intl/en/chrome/">Google Chrome</a>, <a href="https://www.mozilla.org/en/firefox/new/">Mozilla Firefox</a>, <a href="https://www.opera.com">Opera</a> and <a href="https://www.microsoft.com/windows/microsoft-edge">Microsoft Edge</a></p>
         <![endif]-->
     <header class="header">
-        <div class="header--container container --flex-spacing">
+        <div class="header--container container flex-between">
             <h2 class="header--container--title">POSSIBLE</h2>
             <time id="date" class="header--container__time"></time>
         </div>
     </header>
     <nav class="nav container">
-        <ul class="nav__ul--menu --flex-spacing">
+        <ul class="nav__ul--menu flex-between">
             <li class="menu__li"><a href="#">Our company</a></li>
             <li class="menu__li"><a href="#">Our work</a></li>
             <li class="menu__li"><a href="#">Information</a></li>
             <li class="menu__li"><a href="#">Contact us</a></li>
         </ul>
     </nav>
+    <div class="content container">
+        <main class="main">
+            <div class="main--welcome">
+                <h1 class="welcome__h1">Welcome to Possible</h1>
+                <p class="welcome__p">All the materials which I was given by the recruiter: a brief in the document, the
+                    psd file (graphics I needed to create a project that I pulled out from psd were so low quality that
+                    I used
+                    free ones downloaded from unsplash.com and subtlepatterns.com) and jpg file presenting same what was
+                    in psd.
+                </p>
+                <br>
+                <p class="welcome__p">Duis consectetur ante nec ligula vestibulum fermentum. Donec malesuada libero
+                    mi.
+                    Vivamus ac nisi
+                    suscipit,
+                    venenatis sem id, varius purus.</p>
+            </div>
+            <div class="main--gallery">
+                <h2 class="gallery--title">Meet the team</h2>
+                <div class="gallery--container"></div>
+            </div>
 
-    <main class="main container">
-        <div class="main--welcome">
-            <h1 class="welcome__h1">Welcome to Possible</h1>
-            <p class="welcome__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec metus nulla,
-                malesuada
-                non arcu non,
-                pharetra
-                vulputate augue. Nunc molestie consequat nisl, sed maximus odio ultrices nec.</p>
-            <p class="welcome__p">Duis consectetur ante nec ligula vestibulum fermentum. Donec malesuada libero
-                mi.
-                Vivamus ac nisi
-                suscipit,
-                venenatis sem id, varius purus.</p>
-        </div>
-        <div class="main--gallery">
-            <h2 class="gallery--title">Meet the team</h2>
-            <div class="gallery--container"></div>
-        </div>
 
-        <aside class="main__aside--rightColumn">
-            <h3 class="aside--title__figure">Lorem ipsum</h3>
+        </main>
+        <aside class="aside--rightColumn">
+            <h3 class="rightColumn--title__figure">Lorem ipsum</h3>
             <figure>
                 <img src="images/World_blank_map_countries.png" alt="Blank map">
-                <figcaption>Duis consectetur ante nec ligula vestibulum fermentum. Donec malesuada libero
-                    mi.</figcaption>
+                <figcaption>Duis aute irure dolor<br>in reprehenderit in voluptate</figcaption>
             </figure>
         </aside>
-    </main>
+    </div>
 
     <footer class="footer">
         <nav class="footer__nav container">
-            <ul class="nav__ul--menu --flex-spacing">
-                <li class="menu__li">Our company</li>
-                <li class="menu__li">Our work</li>
-                <li class="menu__li">Information</li>
-                <li class="menu__li">Join our newsletter</li>
-                <li class="menu__li">Email this page</li>
-                <li class="menu__li" onclick="pagePrint()">Print this page</li>
-                <li class="menu__li">Contact us</li>
+            <ul class="nav__ul--menu flex-around">
+                <li class="menu__li"><a href="#">Our company</a></li>
+                <li class="menu__li"><a href="#">Our work</a></li>
+                <li class="menu__li"><a href="#">Information</a></li>
+                <li class="menu__li"><a href="#">Join our newsletter</a></li>
+                <li class="menu__li"><a href="#">Email this page</a></li>
+                <li class="menu__li" onclick="pagePrint()"><a href="#">Print this page</a></li>
+                <li class="menu__li"><a href="#">Contact us</a></li>
             </ul>
         </nav>
     </footer>
