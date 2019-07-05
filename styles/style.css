@@ -38,11 +38,15 @@ html {
 
 body {}
 
+a:-webkit-any-link {
+    color: white;
+    text-decoration: none;
+}
 
 
 .header {
     background-image: url("../images/black_denim.png");
-    height: 70px;
+    height: 65px;
     position: absolute;
     width: 100%;
     left: 0;
@@ -51,24 +55,64 @@ body {}
 }
 
 .header--container {
-    padding-top: 35px;
+    margin-top: 15px;
 }
 
 .header--container--title {
     font-weight: 1000;
+    font-size: 2em;
     display: inline-block;
 }
 
+.header--container__time {
+    font-size: 0.75em;
+    margin-top: 25px;
+}
+
 .nav {
-    margin-top: 75px;
+    margin-top: 70px;
+    margin-bottom: 2px;
 }
 
 .nav__ul--menu {
     list-style: none;
 }
 
+
+.nav .menu__li a {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    display: block;
+    padding: 4px 20px;
+    text-transform: uppercase;
+    font-weight: 200;
+    transition: 0.1s 0.05s;
+}
+
+.nav .menu__li a:hover {
+    color: #1d9ed9;
+}
+
+.nav .menu__li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    transition: 0.2s;
+    z-index: -1;
+}
+
+.nav .menu__li a:hover::before {
+    height: 100%;
+    background-color: black;
+}
+
 .menu__li {
     display: inline;
+    padding: 5px 0;
 }
 
 .main {
@@ -88,9 +132,6 @@ body {}
     font-size: 0.75rem;
 }
 
-.footer .menu__li {
-    padding: 5px;
-}
 
 .container {
     width: 1024px;
@@ -98,12 +139,14 @@ body {}
     margin-right: auto;
 }
 
-.--flex-between {
+.--flex-spacing {
     display: flex;
     justify-content: space-between;
 }
 
-.--flex-around {
-    display: flex;
-    justify-content: space-around;
+
+@media (min-width: 1650px) {
+    .flex-spacing {
+        justify-content: space-around;
+    }
 }

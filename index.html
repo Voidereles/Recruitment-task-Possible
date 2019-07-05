@@ -13,8 +13,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/style.css">
-
-    <script src="script.js" defer="defer"></script>
+    <script src="scripts/script.js" defer></script>
 </head>
 
 <body>
@@ -22,13 +21,13 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience. Here you can find links where you can download most popular browsers: <a href="https://www.google.com/intl/en/chrome/">Google Chrome</a>, <a href="https://www.mozilla.org/en/firefox/new/">Mozilla Firefox</a>, <a href="https://www.opera.com">Opera</a> and <a href="https://www.microsoft.com/windows/microsoft-edge">Microsoft Edge</a></p>
         <![endif]-->
     <header class="header">
-        <div class="header--container container --flex-between">
+        <div class="header--container container --flex-spacing">
             <h2 class="header--container--title">POSSIBLE</h2>
-            <time class="header--container__time">18 February 2010</time>
+            <time id="date" class="header--container__time"></time>
         </div>
     </header>
     <nav class="nav container">
-        <ul class="nav__ul--menu --flex-around">
+        <ul class="nav__ul--menu --flex-spacing">
             <li class="menu__li"><a href="#">Our company</a></li>
             <li class="menu__li"><a href="#">Our work</a></li>
             <li class="menu__li"><a href="#">Information</a></li>
@@ -67,7 +66,7 @@
 
     <footer class="footer">
         <nav class="footer__nav container">
-            <ul class="nav__ul--menu --flex-between">
+            <ul class="nav__ul--menu --flex-spacing">
                 <li class="menu__li">Our company</li>
                 <li class="menu__li">Our work</li>
                 <li class="menu__li">Information</li>
