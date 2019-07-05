@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
+
 <html class="no-js">
-<!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
@@ -22,22 +18,30 @@
         <![endif]-->
     <header class="header">
         <div class="header--container container flex-between">
-            <h2 class="header--container--title">POSSIBLE</h2>
+            <h1 class="header__h1--title">POSSIBLE</h1>
             <time id="date" class="header--container__time"></time>
         </div>
+
+        <nav class="nav">
+            <ul class="nav__list container flex-between">
+                <li class="nav__item"><a href="#" class="nav__link">Our company</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Our work</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Information</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+            </ul>
+        </nav>
+
+
     </header>
-    <nav class="nav container">
-        <ul class="nav__ul--menu flex-between">
-            <li class="menu__li"><a href="#">Our company</a></li>
-            <li class="menu__li"><a href="#">Our work</a></li>
-            <li class="menu__li"><a href="#">Information</a></li>
-            <li class="menu__li"><a href="#">Contact us</a></li>
-        </ul>
-    </nav>
+
+
+
+
+
     <div class="content container">
         <main class="main">
             <div class="main--welcome">
-                <h1 class="welcome__h1">Welcome to Possible</h1>
+                <h2 class="welcome__h2">Welcome to Possible</h2>
                 <p class="welcome__p">All the materials which I was given by the recruiter: a brief in the document, the
                     psd file (graphics I needed to create a project that I pulled out from psd were so low quality that
                     I used
@@ -70,13 +74,13 @@
     <footer class="footer">
         <nav class="footer__nav container">
             <ul class="nav__ul--menu flex-around">
-                <li class="menu__li"><a href="#">Our company</a></li>
-                <li class="menu__li"><a href="#">Our work</a></li>
-                <li class="menu__li"><a href="#">Information</a></li>
-                <li class="menu__li"><a href="#">Join our newsletter</a></li>
-                <li class="menu__li"><a href="#">Email this page</a></li>
-                <li class="menu__li" onclick="pagePrint()"><a href="#">Print this page</a></li>
-                <li class="menu__li"><a href="#">Contact us</a></li>
+                <li class="nav__item"><a href="#">Our company</a></li>
+                <li class="nav__item"><a href="#">Our work</a></li>
+                <li class="nav__item"><a href="#">Information</a></li>
+                <li class="nav__item"><a href="#">Join our newsletter</a></li>
+                <li class="nav__item"><a href="#">Email this page</a></li>
+                <li class="nav__item" onclick="pagePrint()"><a href="#">Print this page</a></li>
+                <li class="nav__item"><a href="#">Contact us</a></li>
             </ul>
         </nav>
     </footer>

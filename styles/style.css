@@ -1,20 +1,9 @@
-*,
-address,
-body,
-dd,
-dl,
-dt,
-h1,
-h2,
-html,
-img,
-li,
-p,
-ul {
+* {
     margin: 0;
     padding: 0;
     font-style: normal;
-    line-height: 1.5
+    line-height: 1.5;
+    box-sizing: border-box;
 }
 
 address,
@@ -43,8 +32,8 @@ a:-webkit-any-link {
 
 .header {
     background-image: url("../images/black_denim.png");
-    height: 65px;
-    position: absolute;
+
+    position: fixed;
     width: 100%;
     left: 0;
     top: 0;
@@ -53,11 +42,11 @@ a:-webkit-any-link {
 
 .header--container {
     margin-top: 15px;
+    background-image: url("../images/black_denim.png");
 }
 
-.header--container--title {
+.header__h1--title {
     font-weight: 1000;
-    font-size: 2em;
     display: inline-block;
 }
 
@@ -66,17 +55,12 @@ a:-webkit-any-link {
     margin-top: 25px;
 }
 
-.nav {
-    margin-top: 70px;
-    margin-bottom: 2px;
+.header .nav {
+    background-image: url("../images/denim.png");
+    width: 100%;
 }
 
-.nav__ul--menu {
-    list-style: none;
-}
-
-
-.nav .menu__li a {
+.header .nav .nav__link {
     position: relative;
     overflow: hidden;
     background-color: transparent;
@@ -87,12 +71,12 @@ a:-webkit-any-link {
     transition: 0.1s 0.05s;
 }
 
-.menu__li a:hover,
-.menu__li a:focus {
+.nav__item a:hover,
+.nav__item a:focus {
     color: #1d9ed9;
 }
 
-.nav .menu__li a::before {
+.nav .nav__item a::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -103,15 +87,14 @@ a:-webkit-any-link {
     z-index: -1;
 }
 
-.nav .menu__li a:hover::before,
-.nav .menu__li a:focus::before {
+.nav .nav__item a:hover::before,
+.nav .nav__item a:focus::before {
     height: 100%;
     background-color: black;
 }
 
-.menu__li {
+.nav__item {
     display: inline;
-    padding: 5px 0;
 }
 
 .content {
@@ -119,11 +102,12 @@ a:-webkit-any-link {
     margin-bottom: 28px;
     box-sizing: border-box;
     display: flex;
+    margin-top: 120px;
 }
 
 .main {
     padding: 45px 23px 35px 28px;
-    width: calc(calc(calc(100% / 3) * 2) + 45px);
+    width: calc(((100% / 3) * 2) + 45px);
 }
 
 .main ::selection {
@@ -136,7 +120,7 @@ a:-webkit-any-link {
 
 .aside--rightColumn {
     display: block;
-    width: calc(calc(100% / 3) - 45px);
+    width: calc((100% / 3) - 45px);
     background-color: #f2f2f2;
     padding: 20px;
     color: #1d9ed9;
@@ -146,7 +130,7 @@ a:-webkit-any-link {
     display: block;
     width: 50%;
     border-top: 2px solid #1d9ed9;
-    margin: calc(2em + 37.5px) 0px 10px 0px;
+    margin: calc(2em + 20px) 0px 10px 0px;
 }
 
 .aside--rightColumn img {
