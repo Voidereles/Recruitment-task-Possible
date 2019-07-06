@@ -105,20 +105,49 @@ a:-webkit-any-link {
     margin-top: 40px;
 }
 
-.main__gallery .gallery__title {
+.gallery__title {
     text-transform: uppercase;
     font-size: 1em;
     margin-bottom: 10px;
 }
 
-.main__gallery .gallery__container {
-    width: 100%;
+.gallery__container {
     border: 2px solid black;
 }
 
-.main__gallery .gallery__big-image {
-    width: 475px;
-    height: calc(100%)
+.gallery__big-image {
+    position: relative;
+    display: flex;
+}
+
+.gallery__big-image img {
+    width: 100%;
+}
+
+.gallery__big-image figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    line-height: 1em;
+}
+
+.gallery__person-name {
+    font-weight: 700;
+    display: block;
+}
+
+.gallery__person-about {
+    font-weight: 200;
+    font-size: 90%;
+}
+
+.gallery__images-list {
+    background-image: url(../images/gallery_slider_bg.jpg);
+    height: 103px;
 }
 
 .aside-content {
@@ -133,7 +162,7 @@ a:-webkit-any-link {
     display: block;
     width: 50%;
     border-top: 2px solid #1d9ed9;
-    margin: calc(2em + 20px) 0px 10px 0px;
+    margin: calc(2em + 25px) 0px 10px 0px;
 }
 
 .aside-content__image img {
@@ -187,4 +216,9 @@ a:-webkit-any-link {
     width: 1024px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
 }
