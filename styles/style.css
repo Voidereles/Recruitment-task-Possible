@@ -111,10 +111,14 @@ a:-webkit-any-link {
     margin-bottom: 10px;
 }
 
-.main__gallery .gallery-container {
-    height: 400px;
+.main__gallery .gallery__container {
     width: 100%;
     border: 2px solid black;
+}
+
+.main__gallery .gallery__big-image {
+    width: 475px;
+    height: calc(100%)
 }
 
 .aside-content {
