@@ -18,17 +18,17 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience. Here you can find links where you can download most popular browsers: <a href="https://www.google.com/intl/en/chrome/">Google Chrome</a>, <a href="https://www.mozilla.org/en/firefox/new/">Mozilla Firefox</a>, <a href="https://www.opera.com">Opera</a> and <a href="https://www.microsoft.com/windows/microsoft-edge">Microsoft Edge</a></p>
         <![endif]-->
     <header class="header">
-        <div class="header--container container flex-between">
-            <h1 class="header__h1--title">POSSIBLE</h1>
-            <time id="date" class="header--container__time"></time>
+        <div class="header__container container">
+            <h1 class="header__title"><a href="#">POSSIBLE</a></h1>
+            <p id="date" class="header__time"></p>
         </div>
 
-        <nav class="nav">
-            <ul class="nav__list container flex-between">
-                <li class="nav__item"><a href="#" class="nav__link">Our company</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Our work</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Information</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+        <nav class="menu-main">
+            <ul class="menu-main__list container">
+                <li class="menu-main__item"><a href="#" class="menu-main__link">Our company</a></li>
+                <li class="menu-main__item"><a href="#" class="menu-main__link">Our work</a></li>
+                <li class="menu-main__item"><a href="#" class="menu-main__link">Information</a></li>
+                <li class="menu-main__item"><a href="#" class="menu-main__link">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -52,32 +52,41 @@
                     free ones downloaded from unsplash.com and subtlepatterns.com) and jpg file presenting same what was
                     in psd.</p>
             </div>
-            <div class="main__gallery">
-                <h3 class="main__gallery__title">Meet the team</h3>
-                <div class="main__gallery__container"></div>
+            <div class="main__gallery gallery">
+                <h3 class="gallery__title">Meet the team</h3>
+                <div class="gallery-container">
+                    <div class="gallery-container__big-image"></div>
+
+
+                </div>
             </div>
 
 
         </main>
-        <aside class="aside__rightColumn">
-            <h3 class="aside__title__figure">Lorem ipsum</h3>
-            <figure class="aside__figure">
-                <img src="images/World_blank_map_countries.png" alt="Blank map">
+        <aside class="aside-content">
+            <h3 class="aside-content__title">Lorem ipsum</h3>
+            <figure class="aside-content__image">
+                <img src="images/World-countries.png" alt="Blank map">
                 <figcaption>Duis aute irure dolor<br>in reprehenderit in voluptate</figcaption>
             </figure>
         </aside>
     </div>
 
     <footer class="footer">
-        <nav class="nav">
-            <ul class="nav__list container flex-around">
-                <li class="nav__item"><a href="#">Our company</a></li>
-                <li class="nav__item"><a href="#">Our work</a></li>
-                <li class="nav__item"><a href="#">Information</a></li>
-                <li class="nav__item"><a href="#">Join our newsletter</a></li>
-                <li class="nav__item"><a href="#">Email this page</a></li>
-                <li class="nav__item" onclick="pagePrint()"><a href="#">Print this page</a></li>
-                <li class="nav__item"><a href="#">Contact Us</a></li>
+        <nav class="footer-menu">
+            <ul class="footer-menu__list container">
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Our company</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Our work</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Information</a></li>
+                <li class="footer-menu__item"><button class="footer-menu__button" class="footer-menu__link"
+                        href="#">Join our newsletter</button></li>
+                <li class="footer-menu__item"><button class="footer-menu__button" onclick="javascript:
+                        window.location.href='mailto:maciejzelazo@protonmail.com' ;">Email this
+                        page</button></li>
+                <li class="footer-menu__item"><button class="footer-menu__button" onclick="window.print()">Print this
+                        page</button></li>
+                <li class="footer-menu__item"><button class="footer-menu__button" class="footer-menu__link"
+                        href="#">Contact Us</button></li>
             </ul>
         </nav>
     </footer>
