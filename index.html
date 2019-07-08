@@ -17,11 +17,11 @@
 
 <body>
     <!--[if lt IE 11]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience. Here you can find links where you can download most popular browsers: <a href="https://www.google.com/intl/en/chrome/">Google Chrome</a>, <a href="https://www.mozilla.org/en/firefox/new/">Mozilla Firefox</a>, <a href="https://www.opera.com">Opera</a> and <a href="https://www.microsoft.com/windows/microsoft-edge">Microsoft Edge</a></p>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience. Here you can find links where you can download most popular browsers: <a href="https://browsehappy.com/">Browsehappy</a></p>
         <![endif]-->
     <header class="header">
         <div class="header__container container">
-            <h1 class="header__title"><a href="#">POSSIBLE</a></h1>
+            <h1 class="header__title"><a href="index.html">POSSIBLE</a></h1>
             <p id="date" class="header__time"></p>
         </div>
 
@@ -57,16 +57,138 @@
             <div class="main__gallery gallery">
                 <h3 class="gallery__title">Meet the team</h3>
                 <div class="gallery__container">
-                    <figure class="gallery__big-image">
-                        <img src="images/people/person11.jpg">
+                    <!-- TODO: Change repetetive elements into generated elements -->
+
+                    <figure id="person1" class="gallery__big-image big-image-active">
+                        <img src="images/people/person1.jpg">
                         <figcaption class="gallery__caption"><span class="gallery__person-name">Justin Cooke</span><span
                                 class="gallery__person-about">CEO, POSSIBLE UK,
                                 LONDON</span></figcaption>
                     </figure>
-                    <div class="gallery__images-list">
 
+                    <figure id="person2" class="gallery__big-image big-image-hidden">
+                        <img src="images/people/person2.jpg">
+                        <figcaption class="gallery__caption"><span class="gallery__person-name">Not Justin
+                                Cooke</span><span class="gallery__person-about">Worker#1, POSSIBLE UK,
+                                LONDON</span></figcaption>
+                    </figure>
+
+                    <figure id="person3" class="gallery__big-image big-image-hidden">
+                        <img src="images/people/person3.jpg">
+                        <figcaption class="gallery__caption"><span class="gallery__person-name">Not Justin
+                                Cooke</span><span class="gallery__person-about">Worker#2, POSSIBLE UK,
+                                LONDON</span></figcaption>
+                    </figure>
+
+                    <figure id="person4" class="gallery__big-image big-image-hidden">
+                        <img src="images/people/person4.jpg">
+                        <figcaption class="gallery__caption"><span class="gallery__person-name">Not Justin
+                                Cooke</span><span class="gallery__person-about">Worker#3, POSSIBLE UK,
+                                LONDON</span></figcaption>
+                    </figure>
+
+                    <figure id="person5" class="gallery__big-image big-image-hidden">
+                        <img src="images/people/person5.jpg">
+                        <figcaption class="gallery__caption"><span class="gallery__person-name">Not Justin
+                                Cooke</span><span class="gallery__person-about">Worker#4, POSSIBLE UK,
+                                LONDON</span></figcaption>
+                    </figure>
+
+                    <figure id="person6" class="gallery__big-image big-image-hidden">
+                        <img src="images/people/person6.jpg">
+                        <figcaption class="gallery__caption"><span class="gallery__person-name">Not Justin
+                                Cooke</span><span class="gallery__person-about">Worker#5, POSSIBLE UK,
+                                LONDON</span></figcaption>
+                    </figure>
+
+                    <figure id="person7" class="gallery__big-image big-image-hidden">
+                        <img src="images/people/person7.jpg">
+                        <figcaption class="gallery__caption"><span class="gallery__person-name">Not Justin
+                                Cooke</span><span class="gallery__person-about">Worker#6, POSSIBLE UK,
+                                LONDON</span></figcaption>
+                    </figure>
+
+                    <figure id="person8" class="gallery__big-image big-image-hidden">
+                        <img src="images/people/person8.jpg">
+                        <figcaption class="gallery__caption"><span class="gallery__person-name">Not Justin
+                                Cooke</span><span class="gallery__person-about">Worker#7, POSSIBLE UK,
+                                LONDON</span></figcaption>
+                    </figure>
+
+                    <figure id="person9" class="gallery__big-image big-image-hidden">
+                        <img src="images/people/person9.jpg">
+                        <figcaption class="gallery__caption"><span class="gallery__person-name">Not Justin
+                                Cooke</span><span class="gallery__person-about">Worker#8, POSSIBLE UK,
+                                LONDON</span></figcaption>
+                    </figure>
+
+                    <figure id="person10" class="gallery__big-image big-image-hidden">
+                        <img src="images/people/person10.jpg">
+                        <figcaption class="gallery__caption"><span class="gallery__person-name">Not Justin
+                                Cooke</span><span class="gallery__person-about">Worker#9, POSSIBLE UK,
+                                LONDON</span></figcaption>
+                    </figure>
+
+                    <div class="gallery__thumbnails-container">
+                        <button onclick="previousArrow()" id="previousArrow"
+                            class="gallery__button previous-button button-inactive">
+                            <svg id="previousArrowIcon" class="gallery__arrow arrow-inactive" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                <g>
+                                    <path
+                                        d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z" />
+                                </g>
+                            </svg>
+                        </button>
+
+                        <div class="gallery__thumbnails-images-container">
+                            <div id="gallery-thumbnails" class="gallery__thumbnails-images">
+                                <!-- TODO: Change repetetive elements into generated elements -->
+                                <button onclick="changeImage(1)" id="thumbnails-image1"
+                                    class="gallery__thumbnails-button"><img class="active"
+                                        src="images/people/person1.jpg" alt=""></button>
+                                <button onclick="changeImage(2)" id="thumbnails-image2"
+                                    class="gallery__thumbnails-button"><img src="images/people/person2.jpg"
+                                        alt=""></button>
+                                <button onclick="changeImage(3)" id="thumbnails-image3"
+                                    class="gallery__thumbnails-button"><img src="images/people/person3.jpg"
+                                        alt=""></button>
+                                <button onclick="changeImage(4)" id="thumbnails-image4"
+                                    class="gallery__thumbnails-button"><img src="images/people/person4.jpg"
+                                        alt=""></button>
+                                <button onclick="changeImage(5)" id="thumbnails-image5"
+                                    class="gallery__thumbnails-button"><img src="images/people/person5.jpg"
+                                        alt=""></button>
+                                <button onclick="changeImage(6)" id="thumbnails-image6"
+                                    class="gallery__thumbnails-button"><img src="images/people/person6.jpg"
+                                        alt=""></button>
+                                <button onclick="changeImage(7)" id="thumbnails-image7"
+                                    class="gallery__thumbnails-button"><img src="images/people/person7.jpg"
+                                        alt=""></button>
+                                <button onclick="changeImage(8)" id="thumbnails-image8"
+                                    class="gallery__thumbnails-button"><img src="images/people/person8.jpg"
+                                        alt=""></button>
+                                <button onclick="changeImage(9)" id="thumbnails-image9"
+                                    class="gallery__thumbnails-button"><img src="images/people/person9.jpg"
+                                        alt=""></button>
+                                <button onclick="changeImage(10)" id="thumbnails-image10"
+                                    class="gallery__thumbnails-button"><img src="images/people/person10.jpg"
+                                        alt=""></button>
+                            </div>
+                        </div>
+
+                        <button onclick="nextArrow()" id="nextArrow" class="gallery__button next-button"> <svg
+                                id="nextArrowIcon" class="gallery__arrow" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+                                <g>
+                                    <path
+                                        d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z" />
+                                </g>
+                            </svg>
+                        </button>
                     </div>
-
 
                 </div>
             </div>

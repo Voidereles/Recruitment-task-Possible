@@ -113,15 +113,29 @@ a:-webkit-any-link {
 
 .gallery__container {
     border: 2px solid black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .gallery__big-image {
     position: relative;
-    display: flex;
+    transition: 0.2s;
 }
 
 .gallery__big-image img {
-    width: 100%;
+    width: 668px;
+    height: 375px;
+    transition: 0.2s;
+}
+
+.big-image-active {
+    display: flex;
+    opacity: 1;
+}
+
+.big-image-hidden {
+    display: none;
+    opacity: 0;
 }
 
 .gallery__big-image figcaption {
@@ -133,6 +147,14 @@ a:-webkit-any-link {
     color: white;
     padding: 10px 20px;
     line-height: 1em;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+}
+
+.gallery__big-image:hover figcaption {
+    visibility: visible;
+    opacity: 1;
 }
 
 .gallery__person-name {
@@ -145,10 +167,101 @@ a:-webkit-any-link {
     font-size: 90%;
 }
 
-.gallery__images-list {
+.gallery__thumbnails-container {
     background-image: url(../images/gallery_slider_bg.jpg);
     height: 103px;
+    position: relative;
+    border: 1px solid black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
+
+.gallery__thumbnails-images-container {
+    width: 532px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery__thumbnails-images {
+    width: 891px;
+    height: 74px;
+    transition: 0.3s;
+}
+
+.gallery__thumbnails-button img {
+    position: relative;
+    object-fit: cover;
+    height: 74px;
+    width: 85px;
+    transition: all 0.2s;
+}
+
+.gallery__thumbnails-button img:hover {
+    opacity: 0.7;
+    filter: brightness(1.2);
+}
+
+.gallery__thumbnails-button .active {
+    border: 3px solid #1d9ed9;
+}
+
+.gallery__button {
+    height: calc(100% / 3);
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+}
+
+.gallery__arrow {
+    height: 100%;
+    fill: white;
+    transition: 0.2s;
+}
+
+.gallery__arrow:hover {
+    fill: #1d9ed9;
+}
+
+.gallery__thumbnails-container .button-inactive {
+    cursor: not-allowed;
+}
+
+.arrow-inactive {
+    opacity: 0.5;
+}
+
+.arrow-inactive:hover {
+    fill: white;
+}
+
+.previous-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.slide-right {
+    transform: translateX(-359px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .aside-content {
     display: block;
@@ -196,7 +309,9 @@ a:-webkit-any-link {
     color: #1d9ed9;
 }
 
-.footer-menu__button {
+.footer-menu__button,
+.gallery__button,
+.gallery__thumbnails-button {
     border: none;
     margin: 0;
     padding: 0;
