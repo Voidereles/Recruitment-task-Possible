@@ -1,7 +1,7 @@
 # Task
 Recruitment-task-Possible
 
-The recruitment job that I received from Possible consisted of turning psd into HTML/CSS template (as jpg it is available in this repository).
+The recruitment task that I received from Possible consisted of turning psd into HTML/CSS template (as jpg it is available in this repository).
 
 The conditions included in the brief that I got were as follows:
 - we expect the site to be fixed, a fixed width matching 1024 pixels and centered in the browser
