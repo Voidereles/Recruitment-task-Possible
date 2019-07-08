@@ -1,5 +1,5 @@
-# Zadanie
-Zadanie-rekrutacyjne-Possible
+# Task
+Recruitment-task-Possible
 
 The recruitment job that I received from Possible consisted of turning psd into HTML/CSS template (as jpg it is available in this repository).
 
