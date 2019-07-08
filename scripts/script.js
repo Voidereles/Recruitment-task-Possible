@@ -5,6 +5,9 @@ window.onload = function () {
     let today = new Date();
     let dd = today.getDate();
 
+    // let myDate = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+    // var options = { day: 'numeric', month: 'long', year: 'numeric' };
+    // console.log(myDate.toLocaleDateString('en-EN', options));
     if (dd < 10) {
         dd = "0" + dd;
     }
@@ -15,8 +18,6 @@ window.onload = function () {
     date.insertAdjacentText("beforeend", today);
 }
 
-
-// init variables
 const imagesTotal = 10;
 let currentImage = 1;
 
@@ -36,10 +37,7 @@ function nextArrow() {
     $('#nextArrowIcon').addClass('arrow-inactive');
     $('#previousArrowIcon').removeClass('arrow-inactive');
 }
-// ===================
 
-
-// BULLETS CODE
 function changeImage(imageNumber) {
     $('figure#person' + currentImage).removeClass("big-image-active");
     $('figure#person' + currentImage).addClass("big-image-hidden");
@@ -50,4 +48,3 @@ function changeImage(imageNumber) {
     $('figure#person' + imageNumber).addClass("big-image-active");
     $('#thumbnails-image' + imageNumber + ' img').addClass("active");
 }
-// ===================
