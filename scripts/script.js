@@ -33,7 +33,6 @@ function nextArrow() {
     $('#previousArrow').removeClass("button-inactive");
     $('#nextArrow').addClass("button-inactive");
     $('#gallery-thumbnails').addClass("slide-right");
-    $('#gallery-thumbnails').addClass("slide-right");
     $('#nextArrowIcon').addClass('arrow-inactive');
     $('#previousArrowIcon').removeClass('arrow-inactive');
 }
